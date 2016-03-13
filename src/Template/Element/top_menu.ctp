@@ -11,7 +11,7 @@
         <div class="navbar-header">
             <?php echo $this->Html->link(
                 $this->Html->image(
-                    'logo.png',
+                    'TwbsTheme.logo.png',
                     [
                         "class" => "img-responsive navbar-img",
                         "alt" => 'GintonicCMS'
