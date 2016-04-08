@@ -39,7 +39,7 @@ $languages = Configure::read('Languages');
 <footer class="footer">
     <div class="container">
         <div class="pull-left">
-            <p class="text-muted">Powered by
+            <p class="text-muted"><?= __('Powered by') ?>
                 <a href="https://github.com/gintonicweb/GintonicCMS">GintonicCMS</a>
                 from
                 <a href="http://gintonicweb.com">Gintonic Web</a>
@@ -47,8 +47,8 @@ $languages = Configure::read('Languages');
         </div>
         <?php if ($languages !== false) : ?>
             <div class="pull-right">
-                <div class="btn-group dropup">
-                    <i class="fa fa-globe text-muted"></i>
+                <div class="btn-group dropup language-dropup">
+                    <i class="fa fa-language text-muted"></i>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?= __('Languages') ?>
                     </a>

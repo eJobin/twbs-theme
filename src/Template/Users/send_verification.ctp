@@ -8,18 +8,19 @@
             'url' => ['controller' => 'Users', 'action' => 'sendVerification'],
             'id' => 'UserResendVerificationForm',
             'novalidate' => 'novalidate'
-        ])?>
+        ]) ?>
         <?= $this->Flash->render(); ?>
         <?= $this->Form->input('email', [
             'label' => 'Email',
             'class' => 'form-control',
-            'placeholder' => 'Email Address',
+            'placeholder' => __('Email'),
             'required',
             'autofocus'
         ]) ?>
         <?= $this->Form->submit(
-            __('Resend Code'), ['class' => 'btn btn-lg btn-primary btn-block'
-        ]) ?>
+            __('Resend Code'),
+            ['class' => 'btn btn-lg btn-primary btn-block']
+        ) ?>
         <span class="clearfix"></span>
         <?= $this->Form->end(); ?>
     </div>
